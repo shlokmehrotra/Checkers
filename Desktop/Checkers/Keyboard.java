@@ -5,8 +5,9 @@ public class Keyboard implements KeyListener {
   public void keyPressed(KeyEvent e) {
     int key = e.getKeyCode();
     switch(key) {
-      case KeyEvent.VK_LEFT:
-    	  
+      case KeyEvent.VK_ESCAPE:
+        Main.clearSelected();
+        break;
     }
   }
   public void keyReleased(KeyEvent e) {
